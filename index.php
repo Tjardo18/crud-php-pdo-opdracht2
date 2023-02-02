@@ -23,7 +23,7 @@
             <div class="bodemformaat">
                 <label for="bodemformaat">
                     Bodemformaat:
-                    <select name="bodemformaat" id="bodemformaat">
+                    <select name="bodemformaat" id="bodemformaat" required>
                         <option hidden>Maak je keuze</option>
                         <option value="20">20 centimeter</option>
                         <option value="25">25 centimeter</option>
@@ -37,7 +37,7 @@
             <div class="saus">
                 <label for="saus">
                     Saus:
-                    <select name="saus" id="saus">
+                    <select name="saus" id="saus" required>
                         <option hidden>Maak je keuze</option>
                         <option value="tomaat">Tomatensaus</option>
                         <option value="extraTomaat">Extra tomatensaus</option>
@@ -51,11 +51,11 @@
             <div class="pizzatopping">
                 <label for="pizzatoppings">
                     Pizzatoppings:<br>
-                    <input type="radio" id="vegan" name="pizzatopping1" value="vegan">
+                    <input type="radio" id="topping" name="pizzatopping1" value="vegan">
                     <label for="vegan">Vegan</label><br>
-                    <input type="radio" id="vegetarisch" name="pizzatopping2" value="vegetarisch">
+                    <input type="radio" id="topping" name="pizzatopping2" value="vegetarisch">
                     <label for="vegetarisch">Vegetarisch</label><br>
-                    <input type="radio" id="vlees" name="pizzatopping3" value="vlees">
+                    <input type="radio" id="topping" name="pizzatopping3" value="vlees">
                     <label for="vlees">Vlees</label>
                 </label>
             </div>
@@ -63,16 +63,16 @@
             <div class="kruiden">
                 <label for="kruiden">
                     Kruiden:<br>
-                    <input type="checkbox" id="peterselie" name="kruid1" value="peterselie">
+                    <input type="checkbox" id="kruiden" name="kruid1" value="peterselie">
                     <label for="peterselie">Peterselie</label><br>
 
-                    <input type="checkbox" id="oregano" name="kruid2" value="oregano">
+                    <input type="checkbox" id="kruiden" name="kruid2" value="oregano">
                     <label for="oregano">Oregano</label><br>
 
-                    <input type="checkbox" id="chiliFlakes" name="kruid3" value="chiliFlakes">
+                    <input type="checkbox" id="kruiden" name="kruid3" value="chiliFlakes">
                     <label for="chiliFlakes">Chili Flakes</label><br>
 
-                    <input type="checkbox" id="zwartePeper" name="kruid4" value="zwartePeper">
+                    <input type="checkbox" id="kruiden" name="kruid4" value="zwartePeper">
                     <label for="zwartePeper">Zwarte Peper</label><br>
                 </label>
             </div>
