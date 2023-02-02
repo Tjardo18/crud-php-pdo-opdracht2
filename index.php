@@ -39,11 +39,11 @@
                     Saus:
                     <select name="saus" id="saus">
                         <option hidden>Maak je keuze</option>
-                        <option value="TO">Tomatensaus</option>
-                        <option value="ExTo">Extra tomatensaus</option>
-                        <option value="ST">Spice tomatensaus</option>
-                        <option value="BS">BBQ saus</option>
-                        <option value="CF">Crème Fraîche</option>
+                        <option value="tomaat">Tomatensaus</option>
+                        <option value="extraTomaat">Extra tomatensaus</option>
+                        <option value="spicyTomaat">Spicy tomatensaus</option>
+                        <option value="BBQ">BBQ saus</option>
+                        <option value="cremeFraiche">Crème Fraîche</option>
                     </select>
                 </label>
             </div>
