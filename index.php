@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="create">
+    <div class="card">
         <h1>
             <i class='bx bxs-pizza bx-flip-horizontal'></i>
             Maak je eigen pizza
