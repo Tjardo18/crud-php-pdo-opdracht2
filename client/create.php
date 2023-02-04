@@ -13,6 +13,13 @@ try {
     console_log($e->getMessage());
 }
 
+// Kruiden
+$kruid = "";
+foreach ($kruiden as $kruid1) {
+    $kruid .= $kruid1 . ", ";
+}
+$kruiden1 = rtrim($kruid, ", ");
+
 $sql = "INSERT INTO pizza (id
                           ,bodemFormaat
                           ,saus
@@ -29,7 +36,7 @@ $statement = $pdo->prepare($sql);
 $statement->bindValue(':bmft', $formaat, PDO::PARAM_STR);
 $statement->bindValue(':ss', $saus, PDO::PARAM_STR);
 $statement->bindValue(':tg', $topping, PDO::PARAM_STR);
-$statement->bindValue(':kn', $kruiden, PDO::PARAM_STR);
+$statement->bindValue(':kn', $kruiden1, PDO::PARAM_STR);
 
 $statement->execute();
 

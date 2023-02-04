@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/favicon.avif" type="image/x-icon">
+    <link rel="shortcut icon" href="client/img/favicon.avif" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <title>Pizza Maken</title>
 </head>
@@ -18,7 +18,7 @@
             Maak je eigen pizza
             <i class='bx bxs-pizza'></i>
         </h1>
-        <form action="createPizza.php" method="POST">
+        <form action="client/create.php" method="POST">
 
             <div class="bodemformaat">
                 <label for="bodemformaat">
@@ -51,28 +51,28 @@
             <div class="pizzatopping">
                 <label for="pizzatoppings">
                     Pizzatoppings:<br>
-                    <input type="radio" id="topping" name="pizzatopping1" value="vegan">
-                    <label for="vegan">Vegan</label><br>
-                    <input type="radio" id="topping" name="pizzatopping2" value="vegetarisch">
-                    <label for="vegetarisch">Vegetarisch</label><br>
-                    <input type="radio" id="topping" name="pizzatopping3" value="vlees">
-                    <label for="vlees">Vlees</label>
                 </label>
+                <input type="radio" id="pizzatoppings" name="pizzatoppings" value="vegan">
+                <label for="vegan">Vegan</label><br>
+                <input type="radio" id="pizzatoppings" name="pizzatoppings" value="vegetarisch">
+                <label for="vegetarisch">Vegetarisch</label><br>
+                <input type="radio" id="pizzatoppings" name="pizzatoppings" value="vlees">
+                <label for="vlees">Vlees</label>
             </div>
 
             <div class="kruiden">
                 <label for="kruiden">
                     Kruiden:<br>
-                    <input type="checkbox" id="kruiden" name="kruid1" value="peterselie">
+                    <input type="checkbox" id="kruiden" name="kruiden[]" value="peterselie">
                     <label for="peterselie">Peterselie</label><br>
 
-                    <input type="checkbox" id="kruiden" name="kruid2" value="oregano">
+                    <input type="checkbox" id="kruiden" name="kruiden[]" value="oregano">
                     <label for="oregano">Oregano</label><br>
 
-                    <input type="checkbox" id="kruiden" name="kruid3" value="chiliFlakes">
+                    <input type="checkbox" id="kruiden" name="kruiden[]" value="chiliFlakes">
                     <label for="chiliFlakes">Chili Flakes</label><br>
 
-                    <input type="checkbox" id="kruiden" name="kruid4" value="zwartePeper">
+                    <input type="checkbox" id="kruiden" name="kruiden[]" value="zwartePeper">
                     <label for="zwartePeper">Zwarte Peper</label><br>
                 </label>
             </div>
