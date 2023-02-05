@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../style/style.css">
+<link rel="shortcut icon" href="img/favicon.avif" type="image/x-icon">
 <?php
 
 require('lib/console_log.php');
@@ -48,6 +49,7 @@ foreach ($result as $pizza) {
 }
 ?>
 <div class="card">
+    <h1>Overzicht van je eigen pizza's</h1>
     <table>
         <th>ID</th>
         <th>Bodem Formaat</th>
